@@ -1,540 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" total="10" passed="7">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4526" started-at="2018-04-05T14:43:39Z" finished-at="2018-04-05T14:43:44Z">
+  <suite name="Default suite" duration-ms="2069" started-at="2018-04-05T18:58:49Z" finished-at="2018-04-05T18:58:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4526" started-at="2018-04-05T14:43:39Z" finished-at="2018-04-05T14:43:44Z">
+    <test name="Default test" duration-ms="2069" started-at="2018-04-05T18:58:49Z" finished-at="2018-04-05T18:58:51Z">
       <class name="RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest">
-        <test-method status="PASS" signature="testExamplesValidation()[pri:0, instance:RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest@224edc67]" name="testExamplesValidation" duration-ms="2184" started-at="2018-04-05T09:43:39Z" finished-at="2018-04-05T09:43:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testExamplesValidation -->
-        <test-method status="FAIL" signature="testPostsValidation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest@224edc67]" name="testPostsValidation" duration-ms="41" started-at="2018-04-05T09:43:41Z" data-provider="PostValidationTest" finished-at="2018-04-05T09:43:41Z">
+        <test-method status="PASS" signature="testPostsValidation(java.lang.String, int, int, java.lang.String, java.lang.String)[pri:0, instance:RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest@8bd1b6a]" name="testPostsValidation" duration-ms="1641" started-at="2018-04-05T13:58:49Z" data-provider="PostValidationTest" finished-at="2018-04-05T13:58:51Z">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[posts/{id}]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[id]]>
-              </value>
-            </param>
-            <param index="2">
               <value>
                 <![CDATA[20]]>
               </value>
             </param>
-            <param index="3">
+            <param index="1">
               <value>
-                <![CDATA[title]]>
+                <![CDATA[20]]>
               </value>
             </param>
-            <param index="4">
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
               <value>
                 <![CDATA[doloribus ad provident suscipit at]]>
               </value>
             </param>
+            <param index="4">
+              <value>
+                <![CDATA[qui consequuntur ducimus possimus quisquam amet similique
+suscipit porro ipsam amet
+eos veritatis officiis exercitationem vel fugit aut necessitatibus totam
+omnis rerum consequatur expedita quidem cumque explicabo]]>
+              </value>
+            </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Invalid number of path parameters. Expected 1, was 3. Redundant path parameters are: 20, title.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 3. Redundant path parameters are: 20, title.
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
-	at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1338)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:158)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1225)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1731)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1737)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
-	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:170)
-	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
-	at io.restassured.RestAssured.get(RestAssured.java:778)
-	at RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest.testPostsValidation(JSONSchemaValidationTest.java:44)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostsValidation -->
-        <test-method status="FAIL" signature="testPostsValidation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest@224edc67]" name="testPostsValidation" duration-ms="15" started-at="2018-04-05T09:43:41Z" data-provider="PostValidationTest" finished-at="2018-04-05T09:43:41Z">
+        <test-method status="PASS" signature="testPostsValidation(java.lang.String, int, int, java.lang.String, java.lang.String)[pri:0, instance:RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest@8bd1b6a]" name="testPostsValidation" duration-ms="147" started-at="2018-04-05T13:58:51Z" data-provider="PostValidationTest" finished-at="2018-04-05T13:58:51Z">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[posts/{id}]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[id]]>
-              </value>
-            </param>
-            <param index="2">
               <value>
                 <![CDATA[50]]>
               </value>
             </param>
-            <param index="3">
-              <value>
-                <![CDATA[title]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[repellendus qui recusandae incidunt voluptates tenetur qui omnis exercitationem]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Invalid number of path parameters. Expected 1, was 3. Redundant path parameters are: 50, title.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 3. Redundant path parameters are: 50, title.
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
-	at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1338)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:158)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1225)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1731)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1737)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
-	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:170)
-	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
-	at io.restassured.RestAssured.get(RestAssured.java:778)
-	at RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest.testPostsValidation(JSONSchemaValidationTest.java:44)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPostsValidation -->
-        <test-method status="FAIL" signature="testPostsValidation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest@224edc67]" name="testPostsValidation" duration-ms="16" started-at="2018-04-05T09:43:41Z" data-provider="PostValidationTest" finished-at="2018-04-05T09:43:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[posts/{id}]]>
-              </value>
-            </param>
             <param index="1">
               <value>
-                <![CDATA[id]]>
+                <![CDATA[50]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[100]]>
+                <![CDATA[5]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[title]]>
+                <![CDATA[repellendus qui recusandae incidunt voluptates tenetur qui omnis exercitationem]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[at nam consequatur ea labore ea harum]]>
+                <![CDATA[error suscipit maxime adipisci consequuntur recusandae
+voluptas eligendi et est et voluptates
+quia distinctio ab amet quaerat molestiae et vitae
+adipisci impedit sequi nesciunt quis consectetur]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Invalid number of path parameters. Expected 1, was 3. Redundant path parameters are: 100, title.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 3. Redundant path parameters are: 100, title.
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
-	at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1338)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:158)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1225)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1731)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1737)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1213)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1022)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
-	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:170)
-	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
-	at io.restassured.RestAssured.get(RestAssured.java:778)
-	at RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest.testPostsValidation(JSONSchemaValidationTest.java:44)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostsValidation -->
-        <test-method status="PASS" signature="testSchemasValidation(java.lang.String, java.lang.String)[pri:0, instance:RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest@224edc67]" name="testSchemasValidation" duration-ms="824" started-at="2018-04-05T09:43:41Z" data-provider="SchemasValidationTest" finished-at="2018-04-05T09:43:42Z">
+        <test-method status="PASS" signature="testPostsValidation(java.lang.String, int, int, java.lang.String, java.lang.String)[pri:0, instance:RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest@8bd1b6a]" name="testPostsValidation" duration-ms="252" started-at="2018-04-05T13:58:51Z" data-provider="PostValidationTest" finished-at="2018-04-05T13:58:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[posts]]>
+                <![CDATA[100]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[SchemasPostsFile.json]]>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[at nam consequatur ea labore ea harum]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cupiditate quo est a modi nesciunt soluta
+ipsa voluptas error itaque dicta in
+autem qui minus magnam et distinctio eum
+accusamus ratione error aut]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSchemasValidation -->
-        <test-method status="PASS" signature="testSchemasValidation(java.lang.String, java.lang.String)[pri:0, instance:RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest@224edc67]" name="testSchemasValidation" duration-ms="180" started-at="2018-04-05T09:43:42Z" data-provider="SchemasValidationTest" finished-at="2018-04-05T09:43:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[comments]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SchemasCommentsFile.json]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSchemasValidation -->
-        <test-method status="PASS" signature="testSchemasValidation(java.lang.String, java.lang.String)[pri:0, instance:RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest@224edc67]" name="testSchemasValidation" duration-ms="223" started-at="2018-04-05T09:43:42Z" data-provider="SchemasValidationTest" finished-at="2018-04-05T09:43:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[albums]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SchemasAlbumsFile.json]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSchemasValidation -->
-        <test-method status="PASS" signature="testSchemasValidation(java.lang.String, java.lang.String)[pri:0, instance:RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest@224edc67]" name="testSchemasValidation" duration-ms="639" started-at="2018-04-05T09:43:43Z" data-provider="SchemasValidationTest" finished-at="2018-04-05T09:43:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[photos]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SchemasPhotosFile.json]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSchemasValidation -->
-        <test-method status="PASS" signature="testSchemasValidation(java.lang.String, java.lang.String)[pri:0, instance:RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest@224edc67]" name="testSchemasValidation" duration-ms="122" started-at="2018-04-05T09:43:43Z" data-provider="SchemasValidationTest" finished-at="2018-04-05T09:43:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[todos]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SchemasTodosFile.json]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSchemasValidation -->
-        <test-method status="PASS" signature="testSchemasValidation(java.lang.String, java.lang.String)[pri:0, instance:RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest@224edc67]" name="testSchemasValidation" duration-ms="246" started-at="2018-04-05T09:43:43Z" data-provider="SchemasValidationTest" finished-at="2018-04-05T09:43:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[users]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SchemasUsersFile.json]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSchemasValidation -->
+        </test-method> <!-- testPostsValidation -->
       </class> <!-- RestAssuredTraining.TAETrainingREST.JSONSchemaValidationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
